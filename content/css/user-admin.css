@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #ccc;
+}
+
+.title-small {
+    display: flex;
+    align-items: center;
+}
+
+.title-small .icon-menu .fa-solid {
+    font-size: 24px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.title-small p {
+    color: #ccc;
+}
+
+.name-setting-admin p i.fa-solid {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.name-setting-admin p {
+    cursor: pointer;
+    font-size: 17px;
+    color: rgb(133, 125, 125);
+}
+
+.find-email {
+    padding-top: 40px;
+}
+
+.find-email form label {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.find-email form input {
+    outline: none;
+    padding: 10px 0 10px 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+}
+
+.table-manager {
+    padding-top: 40px;
+}
+
+.table-manager table {
+    border-collapse: collapse;
+    border-color: rgb(135, 137, 139);
+}
+
+.table-manager table tr th {
+    padding: 10px 15px;
+    background-color: #ccc;
+}
+
+.table-manager .btn-see {
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 10px;
+    outline: none;
+    font-weight: bold;
+    background-color: #269977;
+    border: 2px solid #269977;
+    color: #FFFFF6;
+    border-radius: 5px;
+}
+
+.table-manager .one {
+    margin-left: 20px;
+}
+
+.table-manager .selection {
+    margin: 20px 0;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-manager .btn-see .fa-solid {
+    color: #FFFFF6;
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.table-manager table tr td {
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.table-manager table tr td button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #269977;
+    border: 1px solid #269977;
+    color: #FFFFF6;
+    border-radius: 5px;
+}
+
+div.alert-success {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 0 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: #ccc;
+    color: rgb(126, 95, 95);
+}

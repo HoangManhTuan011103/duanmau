@@ -1,0 +1,625 @@
+/* Start header */
+
+#do-subMenu:checked~.main-cart {
+    padding-top: 200px;
+}
+
+
+/* End header */
+
+
+/* Start main cart */
+
+.main-cart {
+    padding-top: 140px;
+    transition: padding-top linear 0.2s;
+}
+
+.cart-left {
+    padding: 30px 0;
+    position: relative;
+}
+
+.product-in-cart {
+    position: relative;
+}
+
+.myCartEmty {
+    position: absolute;
+    top: 170px;
+    left: 40%;
+}
+
+.fa-cart-plus {
+    font-size: 140px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+p.myinforCart {
+    font-size: 18px;
+    margin: 15px 0 0 14px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.title-cart {
+    display: flex;
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 25px 0 25px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.title-cart .fa-solid {
+    font-size: 28px;
+    padding-right: 20px;
+}
+
+.my-cart {
+    max-width: 1470px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+}
+
+.table-product-incart thead th {
+    padding: 10px 50px;
+    color: #806e6b;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.table-product-incart tbody td {
+    /* padding: 50px 30px; */
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-product-incart tbody td.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.table-product-incart tbody td.product {
+    padding: 50px 0;
+}
+
+.table-product-incart tbody td.product p.name-product {
+    padding: 10px 25px 5px 25px;
+}
+
+.table-product-incart tbody td.amount button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.table-product-incart tbody td.amount input {
+    width: 50px;
+    padding: 5px 8px 5px 15px;
+    outline: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.table-product-incart tbody td.delete button {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.add-a-note {
+    padding: 20px 0 20px 25px;
+}
+
+.add-a-note .title-text-note h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #7f7f81;
+    margin: 15px 0 25px 0;
+}
+
+.add-a-note form input {
+    padding: 15px 0 15px 20px;
+    width: 500px;
+    border-radius: 30px;
+    border: 1.5px solid #7f7f81;
+    outline: none;
+}
+
+.cart-right {
+    display: block;
+    background-color: #FAE8E5;
+}
+
+.rows-border {
+    border-top: 4px solid #000;
+    margin: 80px 0 0 45px;
+    width: 250px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.cart-right .pay-with-money {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pay-with-money .total-money-text {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+
+.pay-with-money .total-money-cart {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+
+.pay-with-money .term {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.pay-with-money .checkbox {
+    padding: 60px 0;
+}
+
+.pay-with-money .checkbox label {
+    font-size: 15px;
+}
+
+.pay-with-money .checkbox #agree {
+    width: 25px;
+}
+
+.pay-with-money .checkbox label span {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.pay-with-money .checkbox label {
+    cursor: pointer;
+}
+
+.pay-with-money .btn-pay {
+    margin-bottom: 20px;
+}
+
+.pay-with-money .form .btn-pay {
+    padding: 15px 23px;
+    border-radius: 25px;
+}
+
+.pay-with-money .btn-pay {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #28282B;
+    border: 1px solid #28282B;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.backgroundShowbill {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    animation: backgroundShowbill linear 0.2s;
+    transition: all linear 0.3s;
+}
+
+.underShowBill {
+    position: fixed;
+    width: 800px;
+    border-radius: 20px;
+    top: 15%;
+    left: 30%;
+    background-color: #ffffff;
+    z-index: 1001;
+    display: none;
+    opacity: 0;
+    transition: all linear 0.3s;
+    animation: backgroundShowbill linear 0.2s;
+}
+
+.informationBasic {
+    width: 50%;
+}
+
+
+/* Order placed */
+
+.cart-left>table.orderPlaced {
+    max-width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.cart-left table.tableClone {
+    max-width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin: 30px auto;
+}
+
+.cart-left>table.orderPlaced th {
+    padding: 10px 15px;
+    background-color: #28282B;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.cart-left>table.orderPlaced td {
+    padding: 10px 15px;
+    border: 1px solid #000000;
+}
+
+.cart-left>table.orderPlaced td .viewDetail {
+    outline: none;
+    padding: 10px 15px;
+    color: #28282B;
+    background-color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cart-left>table.orderPlaced td.label {
+    padding: 25px 15px;
+}
+
+.cart-left>table.orderPlaced td .viewDetail:hover {
+    color: #ffffff;
+    background-color: #28282B;
+    transition: all linear 0.5s;
+}
+
+span>.fa-cart-plus {
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+
+/* Start View detail Product Order */
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1000;
+    opacity: 0;
+    transition: all linear 0.3s;
+    animation: backgroundShowbill linear 0.2s;
+}
+
+.myinforCart.orderPlaced {
+    text-align: center;
+    font-size: 16px;
+    /* padding-left: 30px; */
+}
+
+.viewDetailProductClient1 {
+    position: fixed;
+    background-color: #ffffff;
+    width: 800px;
+    z-index: 1001;
+    top: 20%;
+    left: 30%;
+    border-radius: 20px;
+    display: none;
+    transition: all linear 0.3s;
+    animation: backgroundShowbill linear 0.2s;
+}
+
+.viewDetailProductClient2 {
+    position: fixed;
+    background-color: #ffffff;
+    width: 800px;
+    z-index: 1001;
+    top: 20%;
+    left: 30%;
+    border-radius: 20px;
+    display: none;
+    transition: all linear 0.3s;
+    animation: backgroundShowbill linear 0.2s;
+}
+
+input#viewDetail1:checked~.overlay {
+    display: block;
+    opacity: 1;
+}
+
+input#viewDetail2:checked~.overlay {
+    display: block;
+    opacity: 1;
+}
+
+input#viewDetail1:checked~.viewDetailProductClient1 {
+    display: block;
+}
+
+input#viewDetail2:checked~.viewDetailProductClient2 {
+    display: block;
+}
+
+
+/* End View detail Product Order */
+
+.viewDetailProductClient>table {
+    max-width: 700px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+.viewDetailProductClient>table th {
+    padding: 10px 15px;
+    background-color: #28282B;
+    color: #ffffff;
+}
+
+.viewDetailProductClient>table td {
+    padding: 10px 15px;
+}
+
+
+/* Order placed */
+
+
+/* Order  */
+
+.buySuccess {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.information-detail-personal>p.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.information-detail-prduct>p.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.information-detail-prduct {
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.information-detail-prduct>.detailProductClient>table {
+    border-collapse: collapse;
+}
+
+.information-detail-prduct>.detailProductClient>table td {
+    padding: 10px 15px;
+}
+
+.information-detail-prduct>.detailProductClient>table th {
+    padding: 5px 15px;
+}
+
+.information-detail-personal {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.information-detail-personal>.detailPersonal {
+    padding-top: 20px;
+}
+
+.information-detail-personal>.detailPersonal>p {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.information-detail-personal>.detailPersonal>p.totalMoney {
+    font-weight: bolder;
+}
+
+.information-detail-personal>.detailPersonal>p.totalMoney>span.totalMoneySpan {
+    font-weight: bolder;
+}
+
+.form-finished {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button.btn-finished {
+    background-color: #28282B;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.information-detail-personal>.detailPersonal>p>span {
+    padding-bottom: 15px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.title-yourCart {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.my-cart.order-Cart {
+    display: block;
+}
+
+.information-Order-Client {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Order */
+
+#showBill:checked~.backgroundShowbill {
+    display: block;
+    opacity: 1;
+}
+
+#showBill:checked~.underShowBill {
+    display: block;
+    opacity: 1;
+}
+
+.titleMyCart {
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.titleMyCart p {
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-radio {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.option-two {
+    padding-left: 20px;
+}
+
+.btn-dathang {
+    padding: 10px 20px;
+    background-color: #28282B;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-radio .radio {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.underShowBill .agreeMyCart {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.box-infor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderItems {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.orderItems table {
+    border-collapse: collapse;
+}
+
+.orderItems table th {
+    font-size: 15px;
+    padding: 10px 5px;
+}
+
+.orderItems table td {
+    font-size: 15px;
+    padding: 10px 5px;
+}
+
+h2.informationOrder {
+    padding: 30px;
+}
+
+.underShowBill .agreeMyCart input.informationClient {
+    padding: 8px 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+@keyframes backgroundShowbill {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pay-with-money .btn-pay-with-card button {
+    width: 157.38px;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding: 12px 42px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.pay-with-money .btn-pay-with-card .fa-brands {
+    font-size: 19px;
+}
+
+.pay-with-money .btn-pay-with-card .pal {
+    color: #368ebd;
+}
+
+.pay-with-money .btn-pay .fa-solid {
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+
+/* End main cart */

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.navigation-column {
+    background-color: #0F172A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 290px;
+    z-index: 100;
+}
+
+
+/* Css scroll */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+.btn-list {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu-list>li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu-list>li>a {
+    display: block;
+    background-color: #269977;
+    font-weight: bold;
+    border-radius: 100rem;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e4e5e7;
+    border-radius: 50px;
+}
+
+
+/* Css scroll */
+
+.title-page-admin {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2F3A;
+}
+
+.title-page-admin .logo-page-admin .fa-brands {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.title-page-admin .text-page-admin {
+    padding: 5px 0 0 15px;
+}
+
+.list-main-first .title-list h2 {
+    padding: 20px 0 20px 15px;
+    color: #269977;
+}
+
+.navigation-list-fisrt ul li {
+    display: block;
+}
+
+.navigation-list-fisrt ul li a {
+    display: block;
+    padding: 25px 0 25px 15px;
+    color: #BFCBD9;
+    font-size: 15px;
+}
+
+.navigation-list-fisrt ul li a i.fa-solid {
+    color: #BFCBD9;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.navigation-list-fisrt ul li a i.fa-brands {
+    color: #BFCBD9;
+    font-size: 21px;
+    padding-right: 15px;
+}
+
+.navigation-list-fisrt ul li:hover {
+    background-color: #666869;
+    transition: 0.6s linear;
+}
+
+.content-manager.managerShowView {
+    max-width: 1500px;
+    position: relative;
+    left: 140px;
+    margin: 0 auto;
+}

@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+body {
+    background-color: #0F172A;
+}
+
+a {
+    text-decoration: none;
+    color: #2D3748;
+}
+
+label.overlayFogort {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+    animation: backgroundShowbill linear 0.3s;
+}
+
+#formFogort {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 25%;
+    left: 37%;
+    z-index: 2;
+    border: 3px solid #269977;
+    display: none;
+    border-radius: 10px;
+    background-color: #000000;
+    animation: backgroundShowbill linear 0.3s;
+}
+
+.formFindPass {
+    padding-top: 40px;
+    text-align: center;
+}
+
+form#formFogort>h3 {
+    padding-top: 40px;
+    color: #269977;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form#formFogort>.formFindPass>input {
+    padding: 15px 0 15px 5px;
+    width: 80%;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #2D3748;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+.formFindPass>button.btn-forgotPass {
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px 0;
+    background-color: #269977;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showPassFound {
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+#showFogort:checked~.overlayFogort {
+    display: block;
+}
+
+#showFogort:checked~#formFogort {
+    display: block;
+}
+
+@keyframes backgroundShowbill {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container-form {
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 120px auto;
+    background-color: #000000;
+    border-radius: 15px;
+    border: 3px solid #269977;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    padding-top: 45px;
+}
+
+.logo img {
+    object-fit: cover;
+    width: 140px;
+    height: 40px;
+    animation: zoom-in-zoom-out2 2s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out2 {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.title-big h1 {
+    color: #269977;
+    font-size: 28px;
+    padding-top: 40px;
+    font-weight: 900;
+}
+
+.main {
+    padding: 48px 0 15px 0;
+}
+
+.content-input input {
+    width: 100%;
+    padding: 17px 0 17px 17px;
+    margin: 11px 0;
+    font-weight: 400;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #2D3748;
+    font-size: 14px;
+    background-color: #000000;
+}
+
+.content-input label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.content-input .forgot {
+    font-size: 13px;
+    display: flex;
+    justify-content: right;
+    color: #269977;
+    padding-top: 20px;
+}
+
+.button-login {
+    margin-top: 19px;
+}
+
+.button-login button {
+    width: 100%;
+    padding: 15px 0;
+    outline: none;
+    border-radius: 5px;
+    background-color: #269977;
+    border: 1px solid #2D3748;
+    ;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.text-button {
+    padding-left: 11px;
+    margin: auto 0;
+}
+
+.content-input p {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: red;
+    padding-left: 5px;
+}
+
+.button-login p {
+    font-size: 13px;
+    padding-top: 10px;
+    color: red;
+    padding-left: 5px;
+}
+
+.license {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+div.alert {
+    font-size: 12px;
+    padding-left: 10px;
+    color: #269977;
+}

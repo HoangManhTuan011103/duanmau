@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #ccc;
+}
+
+.title-small {
+    display: flex;
+    align-items: center;
+}
+
+.title-small .icon-menu .fa-solid {
+    font-size: 24px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.title-small p {
+    color: #ccc;
+}
+
+.name-setting-admin p i.fa-solid {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.name-setting-admin p {
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(133, 125, 125);
+}
+
+.find-home {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.table-manager {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.total-product,
+.total-category,
+.total-history,
+.total-wait,
+.total-user,
+.total-ware,
+.total-database {
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid rgb(182, 153, 153);
+    box-shadow: inset -10px -10px 30px rgb(182, 153, 153);
+    border-radius: 5px;
+}
+
+.table-manager h2 {
+    padding: 25px 20px;
+}
+
+.table-manager p {
+    padding: 20px 0;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.table-manager .btn-pr {
+    padding: 15px 0;
+}
+
+.table-manager .btn-cat {
+    padding: 15px 0;
+}
+
+.table-manager button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #269977;
+    border: 1px solid #269977;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-manager .fa-solid {
+    font-size: 48px;
+}
+
+.name-setting-admin p {
+    font-size: 17px;
+}

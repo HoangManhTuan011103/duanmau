@@ -1,0 +1,380 @@
+/* Start header */
+
+#do-subMenu:checked~.main-detail {
+    padding-top: 200px;
+}
+
+
+/* End header */
+
+
+/* Start main cart */
+
+.main-detail {
+    padding-top: 140px;
+    transition: padding-top linear 0.2s;
+}
+
+.cart-detail {
+    padding: 30px 0;
+}
+
+.title-detail {
+    display: flex;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 25px 0 25px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.title-detail .fa-solid {
+    font-size: 28px;
+    padding-right: 20px;
+}
+
+.detail-product {
+    max-width: 1270px;
+    padding: 50px 100px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-product img {
+    width: 90%;
+    object-fit: cover;
+}
+
+
+/* Detail Product */
+
+.price-product {
+    padding: 20px 0 10px 0;
+}
+
+.price-product .price-discount {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price-product .price-root {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.quality-product .bold-text {
+    font-weight: bold;
+    color: #222328;
+}
+
+.quality-product span {
+    font-size: 15px;
+}
+
+.quality-product {
+    padding-bottom: 10px;
+}
+
+.color-product {
+    padding-top: 10px;
+}
+
+.color-product label {
+    font-weight: bold;
+}
+
+.color-product button {
+    cursor: pointer;
+    font-size: 0;
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.color-product .color-first {
+    background-color: blue;
+    border: 1px solid blue;
+    margin-top: 10px;
+}
+
+.color-product .color-second {
+    background-color: brown;
+    border: 1px solid brown;
+}
+
+.color-product .color-third {
+    background-color: #222328;
+    border: 1px solid #222328;
+}
+
+.description-product p {
+    padding: 30px 0 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.description-product span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.amount-product {
+    padding: 20px 0;
+}
+
+.amount-product input {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.amount-product button {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    border: 1px solid #222328;
+    outline: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #222328;
+}
+
+.comment-customer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-top: 2px solid #7f7f81;
+}
+
+.comment-customer .title-comment {
+    padding: 20px 0;
+}
+
+.content-comment textarea {
+    outline: none;
+    border-color: #cccfdd;
+    padding: 20px 15px;
+}
+
+.content-comment textarea::placeholder {
+    font-size: 15px;
+}
+
+.main-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.total-comment p {
+    font-weight: bold;
+}
+
+.btn-send-comment button {
+    margin-right: 190px;
+    padding: 9px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #222328;
+    outline: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #222328;
+}
+
+.infor-customer-comment {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.adminAccount {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.infor-customer-comment .avatar {
+    margin-right: 10px;
+    width: 40px;
+    background-color: #7f7f81;
+    border-radius: 100rem;
+    height: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.infor-customer-comment .avatar img {
+    width: 100%;
+    height: 38px;
+    border-radius: 100rem;
+}
+
+.name-customer p {
+    font-weight: bold;
+}
+
+.show-comment p {
+    padding: 15px 0 0 0;
+    font-size: 14px;
+}
+
+.action-comment>ul>li {
+    padding-right: 10px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.action-comment>ul>li.reply>a {
+    font-weight: bold;
+}
+
+.action-comment>ul>li.dateComment {
+    position: relative;
+    padding-right: 20px;
+}
+
+.action-comment>ul>li.dateComment:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.action-comment>ul>li.dateComment:hover>div.timeCommentDate {
+    display: block;
+    animation: showDate linear 0.2s;
+}
+
+@keyframes showDate {
+    from {
+        opacity: 0;
+        /* transform: translateX(-40px); */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateX(0px); */
+    }
+}
+
+div.timeCommentDate {
+    display: none;
+    top: 22px;
+    left: 10px;
+    position: absolute;
+    background-color: #59595f;
+    color: #ffffff;
+    width: 130px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div.timeCommentDate::before {
+    content: "";
+    border-bottom: 7px solid #59595f;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    top: -7px;
+    left: 13px;
+}
+
+.action-comment>ul>li.reply>a:hover {
+    text-decoration: underline;
+}
+
+.action-comment>ul>li.delete>a:hover {
+    text-decoration: underline;
+}
+
+.action-comment>ul>li.delete>a {
+    font-weight: bold;
+}
+
+li.myOrder {
+    padding-right: 70px;
+}
+
+.action-comment {
+    padding: 20px 0;
+}
+
+.content-main-comment {
+    padding: 20px;
+}
+
+
+/* Detail Product */
+
+
+/* Start Best Sellers */
+
+section.product-related {
+    max-width: 1270px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+section.product-related .title-relatedSC h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #b8bfd3;
+}
+
+.products-related {
+    padding: 0 30px 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.product-relatedSC {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.product-relatedSC p {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #b0b0b0;
+}
+
+.product-relatedSC .price-relatedSC {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-relatedSC .price-relatedSC .root {
+    text-decoration: line-through;
+    color: #b0b0b0;
+    font-size: 16px;
+}
+
+.product-relatedSC .price-relatedSC .discount {
+    font-size: 16px;
+}
+
+.image-relatedSC img {
+    padding-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+
+/* End Best Sellers */
+
+
+/* End main detail */
