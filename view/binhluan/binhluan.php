@@ -81,7 +81,6 @@
                             }else if($timeCommentCalculate >= 60*60*24*7){
                                 $timeCommentShow = floor($timeCommentCalculate / (60*60*24*7)) ." tuần" ;
                             }
-
                         ?>
                         <li class="reply"><a href="">Reply</a></li>
                         <!-- <li>-</li> -->

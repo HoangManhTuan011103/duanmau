@@ -17,8 +17,6 @@
     <form action="index.php?act=updatesp" method="POST" enctype="multipart/form-data">
 
         <input type="hidden" name="id" value="<?= $id ?>">
-
-
         <div class="columnProduct1">
             <p>Tên sản phẩm:</p>
             <input type="text" name="nameProduct" autocomplete="off" value="<?= $name ?>">

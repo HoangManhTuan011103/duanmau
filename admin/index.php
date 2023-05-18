@@ -196,23 +196,10 @@
                     }
                     $sqlClone = "select * from san_pham";
                     $sqlAll = pdo_query($sqlClone);
-                    
-                    // Important
-                    // if(isset($_SESSION['filter'])){
-                    //     $_SESSION['filter'] = sanpham_selectAll($iddm,$namePr,$rowsAdmin);
-                    // }else{
                     $listsp  = sanpham_selectAll($iddm,$namePr,$rowsAdmin);
-                    // }
-                    // $listsp = $_SESSION['filter'];
-                    // $listsp = sanpham_selectAll($iddm,$namePr,$rowsAdmin);
-                    // $listsp = sanpham_selectAll($iddm,$namePr,$rowsAdmin);
                     $countPage = get_Page_Product_admin($iddm,$namePr,$rowsAdmin);
-                    // Important
-                    // if(isset($_GET['page']) &&  $_GET['page'] > 0 && $_GET['page'] <= $countPage+1 ){
-                    //     $page = $_GET['page'];
-                    // }else{
-                    //     $page = '1';
-                    // }
+
+                    
                     $soLuongSp = sanpham_soluong();
                     $listdm = danhmuc_selectAll();
                     include "san-pham/list.php";
